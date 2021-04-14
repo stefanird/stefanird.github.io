@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Stefani Sotomayor's Portfolio
+        </title>
+	
+	<link href="./style.css" type="text/css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    </head>
+
+    <body>
+        
+	
+            
+                <nav class="topnav" id="portfolioTopnav">
+			        <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+				<a href="#top">Home</a>
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#accomplishments">Accomplishments </a>
+				<a href="#contact">Contact</a>
+                	<!--
+			<ul class="navli">
+				<li><a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a></li>
+				<li><a href="#top">Home</a></li>          
+                    		<li><a href="#about">About</a></li>
+                    		<li><a href="#skills">Skills</a></li>
+                    		<li><a href="#accomplishments">Accomplishments </a></li>
+                    		<li><a href="#contact">Contact</a></li>
+                	</ul> 
+			-->        
+                </nav>         
+            
+	<header>
+            <div id="header">
+                <h1> Stefani Sotomayor</h1>
+		<figure>
+                	<a href="https://au.linkedin.com/in/stefani-sotomayor" target="_blank"> <img src="IMG_1872.jpg" width="200" height="250" class="circle" alt="Stefani next to Brisbane river"/> </a>
+                	<figcaption class="heading"> PhD Researcher  </figcaption>
+                </figure>
+            </div>
+
+	</header>
+
+
+	<main>
+            <!--About Section -->
+            <div id="aboutsection">
+                
+                <h2 id="about" class="uppercase"> About </h2>
+                    <!--<p>Hello World!</p>-->
+                    <p class="t1">I am a <strong>QUT PhD student in Computer Science School</strong>, my project research is about <em>modelling pandemic response scenarios</em>. I am people-focused and passionate about using innovative digital methodologies to create <em>unique and insightful decision making-tools for people</em>.</p>
+                    
+		<h3 id="skills"> Skills</h3>
+                        <h4>Research Skills</h4>
+                            <ul class="list">
+                                <li>Report writing</li>
+                                <li>Planning and scheduling</li>
+                                <li>Critical thinking</li>
+                            </ul>
+                        <h4>Interpersonal Skills</h4>
+                            <ul class="list">
+                                <li>Active listening</li>
+                                <li>Teamwork</li>
+                                <li>Responsibility</li>
+                            </ul>
+                        <h4>Technical Skills</h4>
+                            <ul class="list">
+                                <li>Software proficiency</li>
+                                <li>Project management</li>
+                                <li>Visualisations</li>
+                            </ul>
+            </div>
+
+            <!--Accomplishment Section -->
+            <div id="accomplishmentssection">
+                <h2 id="accomplishments"> Accomplishments </h2>
+                <!--
+                <table>
+                    <tr>
+                        <th></th>
+                        <th scope="col">Saturday</th>
+                        <th scope="col">Sunday</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Temperature 1</th>
+                        <td>
+                            35
+                        </td>
+                        <td>
+                            32
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Temperature 2</th>
+                        <td>
+                            30
+                        </td>
+                        <td>
+                            37
+                        </td>
+                    </tr>
+                </table>
+                -->
+                <table>
+                    <tr>
+                        <th class="tabsty">Publications</th>
+                        <th class="tabsty">Awards</th>
+                        <th class="tabsty">Presentations</th>
+                    </tr>
+                    <tr>
+                        <td class="tabsty"> Poster at NeurIPS </td>
+                        <td class="tabsty"> Scholarships </td>
+                        <td class="tabsty"> Stage 2 Report</td>
+                    </tr>
+                </table>
+            </div>
+
+
+		<!--Coding Examples -->
+		<div id="examplesection">
+			<h2 id="examples"> Quiz Visualisation Code</h2>
+
+			
+				<a href="./quiz.html" target="_blank"><button id="quizbutt">Take the portfolio quiz!</button></a>
+			
+
+		</div>
+
+            <!--Contact Section -->
+            <div id="contactsection">
+                <h2 id="contact" class="contactform overlay"> Contact </h2>
+                <a href="https://au.linkedin.com/in/stefani-sotomayor" target="_blank"> LinkedIn</a>
+                <br>
+                <br>
+                <!--
+                <form action="success.html" method="get">
+                    
+                    <br>
+                    <label>Name <input name="Name"></label>
+                    <label>Email <input name="Email"></label>
+                    <br>
+                    <button>Sign up</button>
+                </form>
+                -->
+                
+                <form>
+                    <label for="name">*Please enter your name:</label>
+                    <br>
+                    <input type="text" name="name"  required> <!--value="Your Name"-->
+                    <br>
+                    <br>
+                    <label for="email">*Email:</label>
+                    <br>
+                    <input id="email" name="emal" type="text" pattern=“[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$” required>
+                    <br>
+                    <br>
+                    <label for="phone">Mobile (optional):</label>
+                    <br>
+                    <input id="mobile" name="mobile" type="text" pattern=“[0-9]”>
+                    <br>
+                    <br>
+                    <label for="message">
+                        *Leave your message below:
+                    </label>
+                    <br>
+                    <textarea id="message" name="message" rows="5" xols="30" required></textarea>
+                    <br>
+                    <br>
+                    <input type="submit">
+                </form>
+            </div>
+
+        </main>
+
+	<script src="./nav.js">
+	</script>
+
+
+    </body>
+
+    <footer>
+	<a href="#top"><button>Home</button></a>
+        <!-- <p><a href="#top">Home</a>></p> -->
+    </footer>
+</html>
