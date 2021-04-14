@@ -1,5 +1,5 @@
 //creates an alert
-alert('Hello world');
+/*alert('Hello world');
 
 /* 
 This is a
